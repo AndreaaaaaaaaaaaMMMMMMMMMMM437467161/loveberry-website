@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loveberry</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef9f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #eee;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d12;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #d12;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(#d33, #f77);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .product {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .product p {
+      margin-top: 10px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      background-color: #d12;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .social {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .insta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #f04393;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .insta-button img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .catalog {
+      background-color: #fff7f9;
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .brand {
+      margin-top: 30px;
+    }
+
+    .brand h3 {
+      color: #b10;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .brand ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #444;
+    }
+
+    .brand li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      background-color: #eee;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🍓 Loveberry</div>
+    <nav>
+      <ul>
+        <li><a href="#">Početna</a></li>
+        <li><a href="#onama">O nama</a></li>
+        <li><a href="#proizvodi">Proizvodi</a></li>
+        <li><a href="#katalog">Katalog</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Prirodno ukusno. Zdravo jednostavno.</h1>
+    <p>Loveberry - sokovi i čokolade iz srca prirode</p>
+  </section>
+
+  <section id="onama">
+    <h2>O nama</h2>
+    <p>Porodična firma posvećena zdravim navikama. Nudimo proizvode bez dodatnog šećera, konzervansa i bilo čega veštačkog.</p>
+  </section>
+
+  <section id="proizvodi">
+    <h2>Naši proizvodi</h2>
+    <div class="product-gallery">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1572451472211-5071f951e4a2" alt="Voćni sok">
+        <p>100% prirodni sok od maline</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1593809793095-dcb573ad06a4" alt="Čokolada">
+        <p>Organska tamna čokolada 80%</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog" id="katalog">
+    <h2>Katalog proizvoda</h2>
+    <div class="brand">
+      <h3>🍇 Loveberry Sokovi</h3>
+      <ul>
+        <li>Sok od maline – 250ml</li>
+        <li>Sok od borovnice – 250ml</li>
+        <li>Sok od aronije – 250ml</li>
+      </ul>
+    </div>
+    <div class="brand">
+      <h3>🍫 Loveberry Čokolade</h3>
+      <ul>
+        <li>Tamna čokolada 80% kakaa – 100g</li>
+        <li>Čokolada sa pomorandžom – 100g</li>
+        <li>Veganska čokolada bez šećera – 100g</li>
+      </ul>
+    </div>
+    <div class="brand">
+      <h3>🌿 BioNature Herbal</h3>
+      <ul>
+        <li>Čaj od mente – 40g</li>
+        <li>Čaj od hibiskusa – 50g</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <h2>Kontakt</h2>
+    <form>
+      <input type="text" placeholder="Vaše ime" required>
+      <input type="email" placeholder="Vaš email" required>
+      <textarea rows="4" placeholder="Poruka" required></textarea>
+      <button type="submit">Pošalji</button>
+    </form>
+  </section>
+
+  <section class="social">
+    <a href="https://www.instagram.com/loveberry.srb/" class="insta-button" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+      Pratite nas na Instagramu
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Loveberry. Sva prava zadržana.</p>
+  </footer>
+</body>
+</html>
